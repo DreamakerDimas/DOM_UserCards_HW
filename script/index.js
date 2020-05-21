@@ -7,5 +7,8 @@ deleteButtonElements.forEach(element => {
 });
 
 function removeUserCardElement(listener){
-    this.parentElement.remove();
+    let approving = confirm('Do you really want to remove this card?');
+    if(approving){
+        this.parentElement.remove();
+    }
 }
